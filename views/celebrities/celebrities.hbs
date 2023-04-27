@@ -1,0 +1,10 @@
+<h1>All Celebrities</h1>
+{{#each celebrities}}
+    <h3>{{name}}</h3>
+    <h3>{{occupation}}</h3>
+    <h3>{{catchphrase}}</h3>
+    <form action="/celebrities/{{_id}}/delete">
+        <button type="submit">Delete</button>
+    </form>
+    <hr>
+{{/each}}
